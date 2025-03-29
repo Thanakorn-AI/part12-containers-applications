@@ -1,0 +1,14 @@
+Script started on Sat Mar 29 11:10:33 2025
+[1m[7m%[27m[1m[0m                                                                                                                                                    [0m[27m[24m[J(base) thanakornkitviriya@Thanakorns-iMac part12-containers-applications % [K[?2004h[7mdocker container run -it ubuntu bash[27m[36D[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27mb[27ma[27ms[27mh[?2004l
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K5a7813e071bf: Pulling fs layer [1B[1A[2K5a7813e071bf: Downloading [========>                                          ]  5.243MB/29.75MB[1B[1A[2K5a7813e071bf: Downloading [====================>                              ]  12.25MB/29.75MB[1B[1A[2K5a7813e071bf: Downloading [============================>                      ]  16.78MB/29.75MB[1B[1A[2K5a7813e071bf: Downloading [==========================================>        ]  25.17MB/29.75MB[1B[1A[2K5a7813e071bf: Downloading [=================================================> ]  29.36MB/29.75MB[1B[1A[2K5a7813e071bf: Download complete [1B[1A[2K5a7813e071bf: Extracting 1 s[1B[1A[2K5a7813e071bf: Extracting 1 s[1B[1A[2K5a7813e071bf: Extracting 1 s[1B[1A[2K5a7813e071bf: Extracting 1 s[1B[1A[2K5a7813e071bf: Extracting 1 s[1B[1A[2K5a7813e071bf: Extracting 1 s[1B[1A[2K5a7813e071bf: Extracting 1 s[1B[1A[2K5a7813e071bf: Extracting 1 s[1B[1A[2K5a7813e071bf: Pull complete [1BDigest: sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@e14858be05d1: /root@e14858be05d1:/# [7mmkdir /usr/src/app[27mmkdir /usr/src/app
+[?2004l[?2004h]0;root@e14858be05d1: /root@e14858be05d1:/# [7mtouch /usr/src/app/index.js[27mtouch /usr/src/app/index.js
+[?2004l[?2004h]0;root@e14858be05d1: /root@e14858be05d1:/# [K[7mexit[27mexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                                                    [0m[27m[24m[J(base) thanakornkitviriya@Thanakorns-iMac part12-containers-applications % [K[?2004heexit[?2004l
+
+Script done on Sat Mar 29 11:15:12 2025
