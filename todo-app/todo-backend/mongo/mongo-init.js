@@ -1,3 +1,4 @@
+// part12-containers-applications/todo-app/todo-backend/mongo/mongo-init.js
 db.createUser({
   user: 'the_username',
   pwd: 'the_password',
