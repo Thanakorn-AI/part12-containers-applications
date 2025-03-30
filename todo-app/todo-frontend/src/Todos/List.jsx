@@ -1,14 +1,15 @@
 // part12-containers-applications/todo-app/todo-frontend/src/Todos/List.jsx
-import React from 'react'
+import React from 'react';
+import Todo from './Todo';
 
 const TodoList = ({ todos, deleteTodo, completeTodo }) => {
   const onClickDelete = (todo) => () => {
-    deleteTodo(todo)
-  }
+    deleteTodo(todo);
+  };
 
   const onClickComplete = (todo) => () => {
-    completeTodo(todo)
-  }
+    completeTodo(todo);
+  };
 
   return (
     <>
@@ -20,7 +21,7 @@ const TodoList = ({ todos, deleteTodo, completeTodo }) => {
               <button onClick={onClickDelete(todo)}> Delete </button>
             </span>
           </>
-        )
+        );
 
         const notDoneInfo = (
           <>
@@ -32,19 +33,17 @@ const TodoList = ({ todos, deleteTodo, completeTodo }) => {
               <button onClick={onClickComplete(todo)}> Set as done </button>
             </span>
           </>
-        )
+        );
 
         return (
-          <div style={{ display: 'flex', justifyContent: 'space-between', maxWidth: '70%', margin: 'auto' }}>
-            <span>
-              {todo.text} 
-            </span>
+          <div key={todo._id} style={{ display: 'flex', justifyContent: 'space-between', maxWidth: '70%', margin: 'auto' }}>
+            <Todo text={todo.text} done={todo.done} />
             {todo.done ? doneInfo : notDoneInfo}
           </div>
-        )
-      }).reduce((acc, cur) => [...acc, <hr />, cur], [])}
+        );
+      }).reduce((acc, cur) => [...acc, <hr key={`hr-${cur.key}`} />, cur], [])}
     </>
-  )
-}
+  );
+};
 
-export default TodoList
+export default TodoList;

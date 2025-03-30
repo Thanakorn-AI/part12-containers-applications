@@ -3,7 +3,7 @@ import React from 'react';
 
 const Todo = ({ text, done }) => {
   return (
-    <div>
+    <div style={{ marginRight: '1rem' }}>
       <span>{text}</span> - <span>{done ? 'Done' : 'Not Done'}</span>
     </div>
   );
