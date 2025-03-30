@@ -16,10 +16,11 @@ if (!REDIS_URL) {
 } else {
   const client = redis.createClient({
     url: REDIS_URL
-  })
-    
-  getAsync = promisify(client.get).bind(client)
-  setAsync = promisify(client.set).bind(client)    
+  });
+  client.on('connect', () => console.log('Connected to Redis'));
+  client.on('error', (err) => console.error('Redis connection error:', err));
+  getAsync = promisify(client.get).bind(client);
+  setAsync = promisify(client.set).bind(client);
 }
 
 module.exports = {

@@ -12,7 +12,9 @@ app.use(cors());
 
 app.use(logger('dev'));
 app.use(express.json());
-
+console.log('Server starting...');
+console.log('MONGO_URL:', process.env.MONGO_URL);
+console.log('REDIS_URL:', process.env.REDIS_URL);
 app.use('/', indexRouter);
 app.use('/todos', todosRouter);
 
