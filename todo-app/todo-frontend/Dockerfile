@@ -3,7 +3,7 @@ WORKDIR /usr/src/app
 COPY . .
 RUN npm ci
 RUN npm test
-ENV VITE_BACKEND_URL=http://localhost:3000
+ENV VITE_BACKEND_URL=http://host.docker.internal:3002
 RUN npm run build
 
 FROM node:20
